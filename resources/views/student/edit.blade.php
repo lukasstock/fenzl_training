@@ -15,7 +15,7 @@
                 </ul>
 
             @endif
-            <form method="post" action="{{action('StudentController@update', 3)}}">
+            <form method="post" action="{{action('StudentController@update', $student->id)}}">
                 {{csrf_field()}}
                 <input type="hidden" name="_method" value="PATCH"/>
                 <div class="form-group">
